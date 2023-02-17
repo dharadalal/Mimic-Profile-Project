@@ -1,0 +1,243 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+body{
+font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding:0;
+}
+html{
+  scroll-behavior: smooth;
+}
+#navbar{
+  top:0;
+  left:0;
+  min-width:100%;
+  background:var(--main-red);
+  position:fixed;
+  display:flex;
+  justify-content: flex-end;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+ }
+.nav-list {
+ margin-right: 2rem;
+  margin-top:0;
+  margin-bottom:0;
+  padding:0.8rem;
+}
+#navbar li{
+  list-style:none;
+  display:inline-block;
+  font-size: 2.2rem;
+}
+#navbar ul li a{
+  color:white;
+  text-decoration:none;
+  padding:1rem;
+}
+
+#navbar ul li a:hover{
+     display: block;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  #navbar ul li a {
+    display:block;
+  }
+}
+/*  Welcome Section */
+#welcomesection{
+  display:flex; 
+}
+
+.welcomesection{
+/*   background-color:var(--main-gray); */
+  height:100vh;
+  max-width:100%;
+  margin-left:0;
+  margin-right:0;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  
+}
+
+#welcomesection > h3{
+  color:var(--main-white);
+  font-size: 6rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  margin-top:0;
+  margin-bottom:0;
+}
+h4{
+   font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--main-red);
+   margin-top:0;
+  margin-bottom:0;
+}
+/*  End of welcome section*/
+
+/*  Project sectipon */
+#projects{
+  background-color:var(--main-blue);
+  text-align: center;
+    padding: 10rem 2rem;
+  max-width:100%;
+}
+ h2{
+  margin-top:0;
+  margin-bottom:0;
+  text-align:center;
+  color:var(--main-white);
+  font-size: 2.8rem;
+}
+
+.project_header
+{
+  max-width:700px; 
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+  padding-top:6rem;
+}
+.container
+{
+  display:grid;
+   grid-template-columns:repeat(3,1fr);  
+  grid-template-rows: repeat(2, 1fr);
+ grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.column{
+   background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+img{
+    height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project_title {
+  font-size: 1.5rem;
+   padding: 2rem 0.5rem;
+  color:var(--main-white);
+  text-align:center;
+  margin:0;
+}
+
+.project_title a span{
+visibility: hidden;
+/*   content:"-after"; */
+}
+.data{
+ transition: color 0.3s ease-out;
+ color: #ff7f50;
+}
+.project_title a:hover span{
+ visibility: visible;
+/* color: var(--main-gray);  */
+
+}
+/* End of Project section */
+
+/* Start of show all button */
+
+.show_button{
+  background-color:var(--main-gray);
+  padding:1rem 2rem;
+  font-size:1.7rem;
+  border-radius:2px ;
+  color:var(--main-white);
+  border:none;
+  
+}
+.show_button:hover{
+  background-color:var(--main-red);
+  transition:  background-color  0.5s ease-in-out;
+}
+
+.show_button:hover > i{
+  transform: translateX(10px);
+}
+
+.show_button > i{
+    transition: transform 0.5s ease-in-out;
+}
+/* end of show all button */
+
+/* Start of contact section */
+.Contact_section{
+  background-color: var(--main-gray);
+  height:100vh;
+  max-width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.title{
+  font-size:4rem;
+  color:var(--main-white);
+  margin:0;
+    text-align:center;
+}
+.sub_title{
+  font-size:1.5rem;
+  color:var(--main-white);
+  margin:0;
+  text-align:center;
+  font-style: italic;
+  margin-bottom:4rem;
+}
+.social_icons{
+  
+  display:inline-block;
+   
+}
+.contact-details{
+  color:var(--main-white);
+  font-size:2rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.10s ease-out;
+}
+.social_icons > a {
+  padding:10px;
+}
+
+.contact-details:hover {
+  transform: translateY(-8px);
+}
+
+/* End of contact section */
+
+/* Start of footer */
+.footer_section{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between ;
+  background-color: var(--main-gray);
+  border-top: 2px solid var(--main-red);
+  color:var(--main-white);
+  padding: 2rem;
+ 
+}
+footer > p{
+    margin: 2rem;
+  font-size:1rem;
+  align-items:center;
+}
+footer i {
+  vertical-align: middle;
+}
