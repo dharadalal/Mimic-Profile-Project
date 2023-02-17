@@ -7,14 +7,8 @@
     <title>Mimic Profile</title>
     <!-- import CSS -->
     <link rel="stylesheet" href="./style.css" />
- 
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/pure-min.css"
-crossorigin="anonymous"/>
+  <!-- font awesome css -->
 
-<!-- Load font awesome icons -->
- <!-- font awesome css -->
  <link
  rel="stylesheet"
  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -29,11 +23,14 @@ crossorigin="anonymous"/>
 <main class="main_page">
 <!-- Start Nav -->
 <nav id="navbar">
-  <ul class="nav-list">
-    <li><a href="#about">About</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+    <div class="navbar-content">
+    <img class="logo-image" src="./logo-design.png" alt="logo of mimic">
+    <div class="menu-content">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+</div>
+</div>
 </nav>
   <!--End Nav -->
   
@@ -50,7 +47,6 @@ crossorigin="anonymous"/>
   <!-- Main container -->
     <div class="container">
   <!--First Row -->
-  
       <div class="column">
       <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" class="image_first" alt="project1">
       <p class="project_title">
@@ -108,7 +104,7 @@ crossorigin="anonymous"/>
 
 <footer class="footer_section">
   <p class="portfolio">**This is just a fake portfolio. All the projects and contact details given are not real.</p>
-  <p class="creater">© Created for freeCodeCamp<i class="faa fa-free-code-camp"></i> </p>
+  <p class="creater">© Created for freeCodeCamp<i class="fa-brands fa-free-code-camp"></i> </p>
 </footer>
 
 <!-- End of footer section -->
